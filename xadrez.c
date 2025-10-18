@@ -9,14 +9,15 @@ int main() {
     int bispo;
     int torre = 0;
     int rainha = 0;
-    
+    int cavalo, movimentoCavalo = 1;
+
     printf("Vamos agora Simular alguns movimentos de peças de Xadrez!!\n");
     printf("\n");
     printf("Primeiro o Bispo movendo 5 casas para a diagonal superior direita:\n");
 
 //Movimentação da peça Bispo
     for (bispo = 0; bispo < 5; bispo++){
-        printf("Diagonal superior direita %d casa(s)\n", bispo + 1);
+        printf("Diagonal superior direita %d° casa(s)\n", bispo + 1);
     }
     printf("\n");
 
@@ -24,18 +25,28 @@ int main() {
 
 //Movimentação da peça Torre
     do {
-        printf("Direita %d casa(s)\n", torre + 1);
+        printf("Direita %d° casa(s)\n", torre + 1);
         torre++;
     } while (torre < 5);
     printf("\n");
 
-    printf("Por último, veremos a peça Rainha mover 8 casa para a esquerda\n");
+    printf("Agora, veremos a peça Rainha mover 8 casas para a esquerda\n");
 
 //Movimentação da peça Torre
     while (rainha < 8){
-        printf("Esquerda %d casa(s)\n", rainha + 1);
+        printf("Esquerda %d° casa(s)\n", rainha + 1);
         rainha++;
     }
-    
+    printf("\n");
+
+     printf("Agora, veremos a peça Cavalo mover 2 casas para a baixo e 1 casa para a esquerda\n");
+//movimentação da peça Cavalo
+    while (movimentoCavalo--){
+        for (cavalo = 0; cavalo < 2; cavalo++){
+            printf("Baixo %d° casa(s)\n", cavalo + 1);
+        }
+        printf("Esquerda %d° casa\n", cavalo - 1);
+    }
+
     return 0;
 }
