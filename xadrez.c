@@ -11,12 +11,13 @@ int main() {
     printf("Vamos agora Simular alguns movimentos de peças de Xadrez!!\n");
     printf("Primeiro o Bispo movendo 5 casas diagonal superior direita:\n");
 
-    
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+//Movimentação da peça Bispo
+    for (bispo = 0; bispo < 5; bispo++){
+        printf("Diagonal superior direita %d casa(s)\n", bispo + 1);
+    }
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+//Movimentação da peça Torre
+
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
