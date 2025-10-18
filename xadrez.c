@@ -6,11 +6,13 @@
 
 int main() {
     
-    int bispo, rainha;
+    int bispo;
     int torre = 0;
-
+    int rainha = 0;
+    
     printf("Vamos agora Simular alguns movimentos de peças de Xadrez!!\n");
-    printf("Primeiro o Bispo movendo 5 casas diagonal superior direita:\n");
+    printf("\n");
+    printf("Primeiro o Bispo movendo 5 casas para a diagonal superior direita:\n");
 
 //Movimentação da peça Bispo
     for (bispo = 0; bispo < 5; bispo++){
@@ -30,8 +32,10 @@ int main() {
     printf("Por último, veremos a peça Rainha mover 8 casa para a esquerda\n");
 
 //Movimentação da peça Torre
-
-
-
+    while (rainha < 8){
+        printf("Esquerda %d casa(s)\n", rainha + 1);
+        rainha++;
+    }
+    
     return 0;
 }
